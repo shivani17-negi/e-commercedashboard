@@ -1,9 +1,7 @@
 .nav-ul li {
   display: inline-block;
   padding: 5px;
-  margin:0;
- 
-  
+  margin: 0;
 }
 .nav-ul {
   list-style: none;
@@ -20,10 +18,18 @@
   padding: 5px;
   margin: 0;
   background-color: skyblue;
-  
-  
 }
+.nav-right {
+  text-align: right;
+}
+.logo{
 
+  width: 45px;
+  float:left;
+  border-radius: 50%;
+  margin-top: 3px;
+  margin-left: 20px;
+}
 
 .nav-ul li a {
   padding: 5px;
@@ -34,8 +40,6 @@
   padding: 5px;
   margin: 0;
   background-color: skyblue;
-  
-  
 }
 .footer {
   position: absolute;
@@ -55,15 +59,11 @@
   margin-left: 30%;
   margin-top: 15%;
 }
-<<<<<<< HEAD
-.login{
-
-   margin-left: 30%;
-   margin-top:15%;
+ .login {
+  margin-left: 30%;
+  margin-top: 15%;
 }
-=======
->>>>>>> 7c228e5afe1a2a490a31c56842cac6c0fc577cff
-.appButton {
+ .appButton {
   padding: 10px;
   margin: 25px;
   background-color: skyblue;

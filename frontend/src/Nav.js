@@ -13,40 +13,43 @@ const Nav=()=>{
 
     return (
       <div>
-        <ul className='nav-ul'>
-          <li>
-            <Link to="/">products</Link>
-          </li>
-          <li>
-            <Link to="/add">add products</Link>
-          </li>
-          <li>
-            <Link to="/update">update products</Link>
-          </li>
-          
-          <li>
-            <Link to="/profile">profile</Link>
-
-          </li>
-          {
-         auth?<li><Link onClick={logout}to="/SignUp">logout</Link> </li>
-         :<>
-         <li><Link to ="/signup">signup</Link></li>
-         <li><Link to ="/login">login</Link></li>
-         
-         
-         
-         
-         
-         </>
-
-
-
-          }
+        <img alt='logo' className='logo'
+       src='https://yt3.ggpht.com/ytc/AKedOLR09bCpy_XTq2scU91URc0pWG0EqS_Yc_Zg-r9pBQ=s900-c-k-c0x00ffffff-no-rj'/>
         
-         
-        </ul>
+        {auth ? (
+          <ul className="nav-ul">
+            <li>
+              <Link to="/">Products</Link>
+            </li>
+            <li>
+              <Link to="/add">Add Products</Link>
+            </li>
+            <li>
+              <Link to="/update"> Update Products</Link>
+            </li>
+            <li>
+              <Link to="/profile">Profile</Link>
+            </li>
+            <li>
+              {" "}
+              <Link onClick={logout} to="/signup">
+                Logout ({JSON.parse(auth).name})
+              </Link>
+            </li>
+          </ul>
+        ) : (
+          <ul className="nav-ul nav-right">
+            <li>
+              {" "}
+              <Link to="/signup">Sign Up</Link>
+            </li>
+            <li>
+              <Link to="/login">Login</Link>
+            </li>
+          </ul>
+        )}
       </div>
     );
 }
-export default Nav; 
+
+export default Nav;
