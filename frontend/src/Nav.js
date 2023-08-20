@@ -26,16 +26,24 @@ const Nav=()=>{
           
           <li>
             <Link to="/profile">profile</Link>
-          </li>
-          <li>{auth?<Link onClick={logout} to ="/signUp">Logout</Link>:<Link to ="/signup">SignUp</Link>}</li>
-<<<<<<< HEAD
-          <li>
-
-          <Link to ="/Login">Login</Link>
 
           </li>
-=======
->>>>>>> 7c228e5afe1a2a490a31c56842cac6c0fc577cff
+          {
+         auth?<li><Link onClick={logout}to="/SignUp">logout</Link> </li>
+         :<>
+         <li><Link to ="/signup">signup</Link></li>
+         <li><Link to ="/login">login</Link></li>
+         
+         
+         
+         
+         
+         </>
+
+
+
+          }
+        
          
         </ul>
       </div>

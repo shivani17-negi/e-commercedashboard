@@ -5,11 +5,12 @@ import Footer from './components/Footer';
 import SignUp from './components/SignUp';
 import PrivateComponent from './components/PrivateComponent';
 <<<<<<< HEAD
-import Login from './components/Login';
+import Login from '../src/components/Login'
 =======
 >>>>>>> 7c228e5afe1a2a490a31c56842cac6c0fc577cff
 
 function App() {
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -43,6 +44,7 @@ function App() {
         <Footer />
       </BrowserRouter>
     </div>
+  
   );
 }
 
