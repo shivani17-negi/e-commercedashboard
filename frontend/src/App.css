@@ -52,12 +52,18 @@
   display: block;
   margin: 25px;
   padding: 7px;
-  width: 300px;
+  width: 295px;
   border: 1px solid skyblue;
+  margin-left: 10%;
 }
 .register {
   margin-left: 30%;
-  margin-top: 15%;
+  margin-top: 40px;
+}
+.product{
+
+  margin-left: 45%;
+  margin-top: 5%;
 }
  .login {
   margin-left: 30%;
@@ -68,6 +74,7 @@
   margin: 25px;
   background-color: skyblue;
   cursor: pointer;
+  margin-left: 20%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
